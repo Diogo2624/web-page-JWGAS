@@ -16,13 +16,15 @@
 /*Container: Logo e Menu */
 .desktop-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     gap: 1rem;
-    margin: 0 5em;
+
 
     flex-wrap: nowrap;
+
+    box-shadow: 1px 1px 1px 1px #dae2eb;
     /* mantém em linha no desktop */
 }
 
@@ -37,6 +39,8 @@
     width: 200px;
     padding: 20px 0px;
 
+    /*Margem na esquerda da Logo*/
+    margin-left: 5em;
 }
 
 /*Container: Menu */
@@ -45,7 +49,7 @@
     display: flex;
     justify-content: center;
 
-    gap: 5rem;
+    gap: 3rem;
 
 }
 /*Item: Botões do Menu */
@@ -53,9 +57,9 @@
     position: relative;
     /* obrigatório para o ::after */
     text-decoration: none;
+    color: #034e90;
     font-size: 26px;
     font-family: 'Bebas Neue', cursive;
-    color: #0b4f8a;
     font-weight: 600;
     letter-spacing: 0.3px;
     white-space: nowrap; /* impede quebra interna */
@@ -75,13 +79,12 @@
         transform 0.15s ease;
 }
 
-<<<<<<< Updated upstream
 .nav-button:hover {
     
-    color: #083b66;
-    transform: translateY(-1px);
+    color: #034e90;
+    transform: translateY(-2px);
 }
-
+/*Animação linha vermelha - Nav Button*/
 .nav-button::after {
     content: "";
     position: absolute;
@@ -91,7 +94,7 @@
     width: 0;
     height: 3px;
 
-    background-color: #d11111;
+    background-color: #e41f2a;
     border-radius: 2px;
 
     transition:
@@ -108,15 +111,18 @@
 /*Container: Botão Zap */
 .zap-button-header {
     display: flex;
-    align-items: center;       
+    align-items: center;       /* centraliza verticalmente */
+    justify-content: center;   /* centraliza horizontalmente */       
     gap: 10px;  
 
+    /*Margem na Direita do Botão do zap*/
+    margin-right: 5em;
+    
     background-color: #034e90;
     color: #ffffff;
     
     padding: 10px 40px;
     border-radius: 20px;
-
     background-color: #034e90;
     box-shadow: 0 6px 16px rgba(3, 78, 144, 0.25);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -149,6 +155,7 @@ span.zap-button:visited{
 .Menu-button-mobileonly {
     display: none;
 }
+/*Responsividade Tela Intermediaria */
 @media (max-width: 1200px) {
     .Header-Right-Menu-Bar {
         gap: 1rem;
@@ -163,7 +170,7 @@ span.zap-button:visited{
         flex-shrink: 1;
     }
 }
-
+/*Responsividade Mobile */
 @media (max-width: 768px) {
 
 
@@ -227,9 +234,3 @@ span.zap-button:visited{
   height: 30px;
   background-color: #ff7a00;
 }
-
-
-
-
-=======
->>>>>>> Stashed changes
