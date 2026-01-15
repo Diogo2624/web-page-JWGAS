@@ -1,14 +1,10 @@
-/* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
 * {
     padding: 0;
     margin: 0;
 }
-
+:root{
+    --color-blue: #034e90;
+}
 /* =========================
    DESKTOP
    ========================= */
@@ -16,20 +12,22 @@
 /*Container: Logo e Menu */
 .desktop-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     gap: 1rem;
-    margin: 0 5em;
+    
 
     flex-wrap: nowrap;
+
+    box-shadow: 1px 1px 1px 1px #dae2eb;
     /* mantém em linha no desktop */
 }
 
 /*Container: Logo */
 .header-left {
     flex: 1;
-
+    
 }
 
 /*Item: Logo */
@@ -37,6 +35,8 @@
     width: 200px;
     padding: 20px 0px;
 
+    /*Margem na esquerda da Logo*/
+    margin-left: 5em;
 }
 
 /*Container: Menu */
@@ -45,7 +45,8 @@
     display: flex;
     justify-content: center;
 
-    gap: 5rem;
+
+    gap: 3rem;
 
 }
 /*Item: Botões do Menu */
@@ -53,11 +54,7 @@
     position: relative;
     /* obrigatório para o ::after */
     text-decoration: none;
-    font-size: 26px;
-    font-family: 'Bebas Neue', cursive;
-    color: #0b4f8a;
-    font-weight: 600;
-    letter-spacing: 0.3px;
+    color: #034e90;
     white-space: nowrap; /* impede quebra interna */
     flex-shrink: 1;      /* permite encolher */
 
@@ -75,13 +72,12 @@
         transform 0.15s ease;
 }
 
-<<<<<<< Updated upstream
 .nav-button:hover {
-    
-    color: #083b66;
-    transform: translateY(-1px);
+   
+    color: #034e90;
+    transform: translateY(-2px);
 }
-
+/*Animação linha vermelha - Nav Button*/
 .nav-button::after {
     content: "";
     position: absolute;
@@ -91,7 +87,7 @@
     width: 0;
     height: 3px;
 
-    background-color: #d11111;
+    background-color: #e41f2a;
     border-radius: 2px;
 
     transition:
@@ -108,22 +104,18 @@
 /*Container: Botão Zap */
 .zap-button-header {
     display: flex;
-    align-items: center;       
+    align-items: center;       /* centraliza verticalmente */
+    justify-content: center;   /* centraliza horizontalmente */
     gap: 10px;  
+
+     /*Margem na Direita do Botão do zap*/
+    margin-right: 5em;
 
     background-color: #034e90;
     color: #ffffff;
     
     padding: 10px 40px;
     border-radius: 20px;
-
-    background-color: #034e90;
-    box-shadow: 0 6px 16px rgba(3, 78, 144, 0.25);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.zap-button-header:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 24px rgba(3, 78, 144, 0.35);
 }
 a,
 span.zap-button{
@@ -145,7 +137,7 @@ span.zap-button:visited{
     width: 20px;
 
 }
-/*Item: Botão de menu */
+/*Responsividade Tela Intermediaria */
 .Menu-button-mobileonly {
     display: none;
 }
@@ -163,7 +155,7 @@ span.zap-button:visited{
         flex-shrink: 1;
     }
 }
-
+/*Responsividade Mobile */
 @media (max-width: 768px) {
 
 
@@ -204,32 +196,3 @@ span.zap-button:visited{
 
 
 }
-/*Titulo Vantagens */
-.titulo-secao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin: 60px auto;
-  max-width: 1200px;
-  padding: 0 20px;
-}
-
-.titulo-secao h2 {
-  margin: 0;
-  text-align: center;
-  font-size: clamp(22px, 4vw, 34px);
-  font-weight: 700;
-}
-
-.linha {
-  width: 120px;        
-  height: 30px;
-  background-color: #ff7a00;
-}
-
-
-
-
-=======
->>>>>>> Stashed changes
