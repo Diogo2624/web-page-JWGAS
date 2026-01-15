@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Container: Logo e Menu */ 
+.desktop-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    margin: 0px 10%;
+}
+
+/*Container: Logo */
+.header-left{
+    flex: 1;
+    
+}
+/*Item: Logo */
+.Header-Left-Logo-Icon{
+    width: 150px;
+    height: 120px;
+
+}
+
+/*Container: Menu */
+.Header-Right-Menu-Bar{
+    flex: 1;
+}
+.nav-button{ 
+    text-decoration: none;
+    padding: 0 32px;
+    color:  #042d4d;
+    font-size: larger;
+    padding: 8px 18px;
+    margin-left: 15px;
+    background-color: transparent;
+    
+
+    
+     
+}
+/*Container: Botão Zap */
+.Header-button-zap{
+
+}
