@@ -10,7 +10,47 @@
 }
 
 /* =========================
-   DESKTOP
+   DESKTOP - Fontes
+   ========================= */
+
+#JW {
+    font-size: 36px;
+    font-weight: 700;
+    color: #e41f2a;
+}
+
+#GAS {
+    font-size: 36px;
+    font-weight: 700;
+    color: #034e90;
+}
+
+#servicos-title {
+
+    margin: 3.5rem 10% 0rem 10%;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+
+    text-align: center;
+}
+
+.servicos-subtitle {
+    margin-top: 10px;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+
+    font-family: 'Bebas Neue';
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+/* =========================
+   DESKTOP - Nav Bar
    ========================= */
 
 /*Container: Logo e Menu */
@@ -20,7 +60,7 @@
     align-items: center;
 
     gap: 1rem;
-    
+
 
     flex-wrap: nowrap;
 
@@ -31,7 +71,7 @@
 /*Container: Logo */
 .header-left {
     flex: 1;
-    
+
 }
 
 /*Item: Logo */
@@ -52,6 +92,7 @@
     gap: 3rem;
 
 }
+
 /*Item: Botões do Menu */
 .nav-button {
     position: relative;
@@ -62,12 +103,15 @@
     font-family: 'Bebas Neue', cursive;
     font-weight: 600;
     letter-spacing: 0.3px;
-    white-space: nowrap; /* impede quebra interna */
-    flex-shrink: 1;      /* permite encolher */
+    white-space: nowrap;
+    /* impede quebra interna */
+    flex-shrink: 1;
+    /* permite encolher */
 
-    padding: 8px 28px;   /* padding mais inteligente */
-    
-    
+    padding: 8px 28px;
+    /* padding mais inteligente */
+
+
 
     background-color: transparent;
     font-weight: 500;
@@ -80,10 +124,11 @@
 }
 
 .nav-button:hover {
-   
+
     color: #034e90;
     transform: translateY(-2px);
 }
+
 /*Animação linha vermelha - Nav Button*/
 .nav-button::after {
     content: "";
@@ -109,53 +154,157 @@
 }
 
 /*Container: Botão Zap */
+#zap-button-header {
+    margin-right: 5em;
+}
+
 .zap-button-header {
     display: flex;
-    align-items: center;       /* centraliza verticalmente */
-    justify-content: center;   /* centraliza horizontalmente */
-    gap: 10px;  
+    align-items: center;
+    /* centraliza verticalmente */
+    justify-content: center;
+    /* centraliza horizontalmente */
+    gap: 10px;
 
-     /*Margem na Direita do Botão do zap*/
-    margin-right: 5em;
+    /*Margem na Direita do Botão do zap*/
+
 
     background-color: #034e90;
     color: #ffffff;
-    
+
     padding: 10px 40px;
     border-radius: 20px;
     background-color: #034e90;
     box-shadow: 0 6px 16px rgba(3, 78, 144, 0.25);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .zap-button-header:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 24px rgba(3, 78, 144, 0.35);
 }
-a,
-span.zap-button{
 
-    font-weight: 800;
+a,
+span.zap-button {
+    font-family: "bebas neue";
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
     font-size: large;
     text-decoration: none;
     color: #ffffff;
 }
+
 a,
-span.zap-button:visited{
+span.zap-button:visited {
+    font-family: "bebas neue";
+    font-size: 24px;
     font-weight: 500;
-    font-size: large;
+    letter-spacing: 0.8px;
     text-decoration: none;
     color: #ffffff;
     text-align: center;
 }
-.zap-button-header-image{
+
+.zap-button-header-image {
     width: 20px;
 
 }
+
 /*Item: Botão de menu */
 .Menu-button-mobileonly {
     display: none;
 }
+
+/* =========================
+   DESKTOP - CSS GRID
+   ========================= */
+
+.servicos-main-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.servicos-items {
+    display: grid;
+    margin: 3.5rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 520px));
+    justify-content: center;
+    gap: 16px;
+}
+
+.product {
+    width: 380px;
+    height: 380px;
+    border-radius: 30px;
+    overflow: hidden;
+    
+}
+
+img.product {
+    object-fit: cover;
+    display: block;
+    object-position: 10% 0%;
+    box-shadow: 15px 15px 30px #6589d8,
+        -15px -15px 30px #be1b1b;
+}
+
+#div1 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+
+
+}
+
+#div2 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+}
+
+#div3 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+}
+
 /*Responsividade Tela Intermediaria */
+@media (max-width: 1450px) {
+    .Header-Right-Menu-Bar {
+        gap: 1rem;
+        flex-wrap: nowrap;
+    }
+
+    .nav-button {
+        padding: 6px 20px;
+        font-size: 15px;
+
+        white-space: nowrap;
+        flex-shrink: 1;
+    }
+
+    .servicos-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 470px));
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .product {
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    img.product {
+        object-fit: cover;
+        display: block;
+        object-position: 10% 0%;
+        box-shadow: 15px 15px 30px #6589d8,
+            -15px -15px 30px #be1b1b;
+    }
+}
+
 @media (max-width: 1200px) {
     .Header-Right-Menu-Bar {
         gap: 1rem;
@@ -169,10 +318,135 @@ span.zap-button:visited{
         white-space: nowrap;
         flex-shrink: 1;
     }
+
+    .servicos-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 380px));
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .product {
+        width: 280px;
+        height: 280px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    img.product {
+        object-fit: cover;
+        display: block;
+        object-position: 10% 0%;
+        box-shadow: 15px 15px 30px #6589d8,
+            -15px -15px 30px #be1b1b;
+    }
 }
-/*Responsividade Mobile */
+
+@media (max-width: 1150px) {
+
+    .Header-Right-Menu-Bar {
+        gap: 1rem;
+        flex-wrap: nowrap;
+    }
+
+    .nav-button {
+        padding: 6px 20px;
+        font-size: 15px;
+
+        white-space: nowrap;
+        flex-shrink: 1;
+    }
+
+    .servicos-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 380px));
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .product {
+        width: 280px;
+        height: 280px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    img.product {
+        object-fit: cover;
+        display: block;
+        object-position: 10% 0%;
+        box-shadow: 15px 15px 30px #6589d8,
+            -15px -15px 30px #be1b1b;
+    }
+
+    /* =========================
+   DESKTOP - Fontes 1150px
+   ========================= */
+
+    #JW {
+        font-size: 30px;
+        font-weight: 700;
+        color: #e41f2a;
+    }
+
+    #GAS {
+        font-size: 30px;
+        font-weight: 700;
+        color: #034e90;
+    }
+
+    #servicos-title {
+
+        margin: 3.5rem 10% 0rem 10%;
+        font-family: 'Bebas Neue';
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 0.5px;
+
+        text-align: center;
+    }
+
+    .servicos-subtitle {
+        margin-top: 10px;
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
+
+        font-family: 'Bebas Neue';
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+
+        text-align: center;
+    }
+
+}
+
+/* =========================
+   Mobile
+   ========================= */
 @media (max-width: 768px) {
 
+    .desktop-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        gap: 1rem;
+
+
+        flex-wrap: nowrap;
+
+        box-shadow: 1px 1px 1px 1px #dae2eb;
+        /* mantém em linha no desktop */
+    }
+    .Navigation-header{
+        display: none;
+    }
+    .Header-Left-Logo-Icon {
+        width: 200px;
+        padding: 20px 0px;
+        margin-left: 0rem;
+    }
 
     .nav-button {
         margin-left: 0;
@@ -209,5 +483,24 @@ span.zap-button:visited{
         display: none;
     }
 
+    .servicos-items {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 24px;
+    }
 
+    .product {
+        width: 90%;
+        max-width: 340px;
+        height: 260px;
+        /* padrão visual consistente */
+        border-radius: 24px;
+    }
+
+    img.product {
+        object-position: center top;
+        /* padrão de recorte */
+        box-shadow: 8px 8px 18px rgba(101, 137, 216, 0.45),
+            -8px -8px 18px rgba(190, 27, 27, 0.45);
+    }
 }
