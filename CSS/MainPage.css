@@ -438,6 +438,7 @@ span.zap-button:visited{
     padding: 0 10px;
   }
 }
+/* Aba de vídeo da página principal */
 .video-container h2 {
     font-size: 44px;
     margin-top: 100px;
@@ -476,4 +477,42 @@ span.zap-button:visited{
   padding-bottom: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+}
+
+/* Responsividade vídeo página principal */
+@media (max-width: 768px) {
+
+  .video-container {
+    padding: 30px 16px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #c5161d 0%, #a51217 100%);
+  }
+
+  .video-container h2 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 9 / 16;
+    height: auto;
+
+    margin: 0 auto 24px;
+    display: block;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  .video-subtitle {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
 }
