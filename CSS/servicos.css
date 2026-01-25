@@ -9,6 +9,229 @@
     margin: 0;
 }
 
+/* ========== SEÇÃO NOSSOS SERVIÇOS ========== */
+.nossos-servicos-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho da Seção */
+.nossos-servicos-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.nossos-servicos-header .subtitle {
+    color: #dc2626;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    background: rgba(220, 38, 38, 0.1);
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.nossos-servicos-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.nossos-servicos-header h2 .JW-title {
+    color: #1e3a8a;
+}
+
+.nossos-servicos-header h2 .GAS-title {
+    color: #dc2626;
+}
+
+.nossos-servicos-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.header-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3a8a, #dc2626);
+    margin: 25px auto 0;
+    border-radius: 2px;
+}
+
+/* Grid de Serviços */
+.nossos-servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Card de Serviço */
+.servico-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px 25px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.servico-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    transition: height 0.3s ease;
+}
+
+.servico-card:nth-child(even)::before {
+    background: linear-gradient(90deg, #dc2626, #ef4444);
+}
+
+.servico-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(30, 58, 138, 0.15);
+    border-color: #1e3a8a;
+}
+
+.servico-card:nth-child(even):hover {
+    border-color: #dc2626;
+    box-shadow: 0 15px 40px rgba(220, 38, 38, 0.15);
+}
+
+/* Ícone */
+.servico-icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
+.servico-card:nth-child(even) .servico-icon {
+    background: linear-gradient(135deg, #dc2626 0%, #f87171 100%);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+}
+
+.servico-card:hover .servico-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.servico-icon i {
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+/* Título do Serviço */
+.servico-card h3 {
+    color: #1e293b;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Descrição */
+.servico-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Badge/Tag */
+.servico-tag {
+    display: inline-block;
+    background: #eff6ff;
+    color: #1e3a8a;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.servico-card:nth-child(even) .servico-tag {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+@media (max-width: 1024px) {
+
+    .nossos-servicos-section {
+        padding: 60px 20px;
+    }
+
+    .nossos-servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .servico-card {
+        padding: 32px 20px;
+    }
+
+    .servico-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .servico-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nossos-servicos-header h2 {
+        font-size: 2rem;
+    }
+
+    .nossos-servicos-header p {
+        font-size: 1rem;
+    }
+
+    .nossos-servicos-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .servico-card {
+        padding: 28px 20px;
+    }
+
+    .servico-icon {
+        width: 72px;
+        height: 72px;
+    }
+
+    .servico-icon i {
+        font-size: 2rem;
+    }
+
+    .servico-card p {
+        font-size: 0.95rem;
+    }
+}
+
 /* =========================
    DESKTOP - Containers
    ========================= */
@@ -44,27 +267,32 @@ section.mapbox {
 
     width: 100%;
     height: 40vh;
-    
+
 }
+
 #mapbox-map iframe {
     width: 100%;
     height: 100%;
     border: 0;
 }
-.mapbox-text{
+
+.mapbox-text {
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
     margin-left: 2.5rem;
 }
-.mapbox-text>h1{
-    font: normal 700 40px 'bebas neue',roboto;
+
+.mapbox-text>h1 {
+    font: normal 700 40px 'bebas neue', roboto;
     letter-spacing: 2px;
 }
-.mapbox-text p{
+
+.mapbox-text p {
     padding-top: 2rem;
-    font: normal 300 26px 'bebas neue',roboto;
+    font: normal 300 26px 'bebas neue', roboto;
 }
+
 /* =========================
    DESKTOP - Fontes
    ========================= */
@@ -132,7 +360,7 @@ section.mapbox {
     cursor: default;
 }
 
-
+/* Serviços aba */
 /* =========================
    DESKTOP - CSS GRID
    ========================= */
@@ -555,8 +783,9 @@ img.product {
             opacity 0.35s ease,
             transform 0.35s ease;
     }
+
     /* Mapbox mobile */
-     .mapbox-container {
+    .mapbox-container {
         padding: 1.5rem;
         margin: 1.5rem 1rem;
     }
@@ -580,7 +809,7 @@ img.product {
         align-items: center;
     }
 
-    .mapbox-text > h1 {
+    .mapbox-text>h1 {
         font-size: 28px;
         letter-spacing: 1px;
     }
@@ -589,6 +818,7 @@ img.product {
         font-size: 18px;
         padding-top: 1rem;
     }
+
     /* ESTADO ABERTO */
     .accordion[open] .faq-content {
         opacity: 1;
