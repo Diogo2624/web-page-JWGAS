@@ -248,11 +248,10 @@ a, span.zap-button:visited {
 .footer {
     position: relative;
     display: flex;
-    height: 16dvh;
+    height: 20vh;
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
-    margin-top: 2vh;
     background-color: #022f5e;
 }
 
