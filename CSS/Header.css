@@ -36,6 +36,26 @@ body {
 
 }
 
+.Povo-Fixed {
+    display: flex;
+    border-radius: 20px;
+
+    background: white;
+    padding: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.povo-fixed-image {
+    align-self: center;
+    margin: 0 45%;
+    width: 140px;
+    height: 180px;
+    border-radius: 20px;
+    border: 1px solid #b4b1b1;
+}
 /*Navbar items */
 .logo {
     width: 20dvh;
@@ -434,4 +454,9 @@ ul.footerlist li {
         width: 24px;
         height: 24px;
     }
+    .povo-fixed-image{
+        margin: 0 33%;
+    }
+
 }
+
