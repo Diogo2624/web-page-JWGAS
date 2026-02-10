@@ -1,0 +1,67 @@
+.privacy-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 16px;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Título principal */
+.privacy-container h1 {
+    font-size: 26px;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+/* Subtítulos */
+.privacy-container h2 {
+    margin-top: 24px;
+    font-size: 20px;
+    color: #1a1a1a;
+}
+
+/* Texto */
+.privacy-container p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* Listas */
+.privacy-container ul {
+    margin-top: 10px;
+    padding-left: 18px;
+}
+
+.privacy-container li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* Linha divisória */
+hr {
+    margin: 32px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* ===== RESPONSIVO PARA TELAS MAIORES ===== */
+@media (min-width: 768px) {
+    .privacy-container {
+        padding: 24px;
+        margin: 60px auto;
+    }
+
+    .privacy-container h1 {
+        font-size: 32px;
+    }
+
+    .privacy-container h2 {
+        font-size: 22px;
+    }
+
+    .privacy-container p,
+    .privacy-container li {
+        font-size: 16px;
+    }
+}

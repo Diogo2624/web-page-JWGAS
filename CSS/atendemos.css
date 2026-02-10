@@ -14,12 +14,13 @@
   letter-spacing: -0.5px;
   color: #111;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .areas-atendimento p {
   margin-bottom: 50px;
-  color: #666;
-  font-size: 16px;
+  color: #757474;
+  font-size: 20px;
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
 }
@@ -71,7 +72,7 @@
 }
 
 .btn-area:hover {
-  background: #c62828;
+  background: #cc3030;
 }
 
 /* Responsividade */
@@ -113,4 +114,28 @@
     padding: 14px;
     font-size: 15px;
   }
+}
+
+.btn-whatsapp {
+  margin-top: 10px;
+  background: #25D366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  gap: 9px;
+  font-weight: bold;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+}
+
+.btn-whatsapp img {
+  width: 26px;
+  height: 26px;
 }
