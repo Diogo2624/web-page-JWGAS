@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://jwgas.com.br/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Institucionais -->
+  <url><loc>https://jwgas.com.br/HTML/servicos.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/atendemos.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/sobrenos.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/privacidade.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/termos.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <!-- Artigos -->
+  <url><loc>https://jwgas.com.br/HTML/artigo-seguranca-gas.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/artigo-botijao-acabando.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/artigo-economizar-gas.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/artigo-vazamento-gas.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/artigo-preco-gas-2025.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/artigo-receitas-economicas.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/artigo-manutencao-fogao.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+
+  <!-- Bairros -->
+  <url><loc>https://jwgas.com.br/HTML/altiplano.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/alto-do-ceu.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/alto-do-mateus.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/agua-fria.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/anatolia.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/aeroclube.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/bancarios.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/bessa.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/brisamar.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/cabobranco.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/castelo-branco.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/centro.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/cruz-das-armas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/cuia.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/ernesto-geisel.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/expedicionarios.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/funcionarios.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/grotao.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/ilha-do-bispo.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/jaguaribe.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/jardim-oceania.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/jardim-cidade-universitaria.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/manaira.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/mandacaru.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/mangabeira.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/miramar.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/mucumagro.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/pedro-gondim.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/roger.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/tambauzinho.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/tambau.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/torre.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/valentina.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jwgas.com.br/HTML/varjao.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+</urlset>
